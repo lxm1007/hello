@@ -49,6 +49,7 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>0.9.9</version>
                 <configuration>
+                    <allowInsecureRegistries>true</allowInsecureRegistries>
                     <from>
                         <!--base image-->
                         <image>openjdk:alpine</image>
@@ -57,7 +58,7 @@
                         <image>localhost:5000/springboot-hello</image>
 
                     </to>
-                    <allowInsecureRegistries>true</allowInsecureRegistries>
+
 
                 </configuration>
 
