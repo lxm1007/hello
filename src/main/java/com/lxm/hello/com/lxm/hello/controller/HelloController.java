@@ -13,4 +13,9 @@ public class HelloController {
     return "现在的时间是："+new Date();
     }
 
+    @RequestMapping("/")
+    public String toHello(){
+        return "rediret:hello";
+    }
+
 }
