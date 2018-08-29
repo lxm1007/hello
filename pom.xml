@@ -57,7 +57,6 @@
                         <image>118.89.160.93:5000/springboot-hello</image>
                     </to>
                 </configuration>
-
             </plugin>
            <!-- <plugin>
                 <groupId>io.fabric8</groupId>
