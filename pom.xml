@@ -51,12 +51,10 @@
                 <configuration>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                     <from>
-
                         <image>openjdk:alpine</image>
                     </from>
                     <to>
                         <image>118.89.160.93:5000/springboot-hello</image>
-
                     </to>
 
 
