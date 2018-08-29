@@ -44,14 +44,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--<plugin>
+            <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>0.9.9</version>
                 <configuration>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                     <from>
-                        &lt;!&ndash;base image&ndash;&gt;
+
                         <image>openjdk:alpine</image>
                     </from>
                     <to>
@@ -62,46 +62,46 @@
 
                 </configuration>
 
-            </plugin>-->
-            <plugin>
+            </plugin>
+           <!-- <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.23.0</version>
                 <configuration>
-                    <!-- 本地 docker 环境，参考step1 -->
+                    &lt;!&ndash; 本地 docker 环境，参考step1 &ndash;&gt;
                     <dockerHost>tcp://localhost:2375</dockerHost>
-                    <!-- 本地 docker 证书 路径，参考step1 -->
-                 <!--   <certPath>${certPath}</certPath>-->
+                    &lt;!&ndash; 本地 docker 证书 路径，参考step1 &ndash;&gt;
+                 &lt;!&ndash;   <certPath>${certPath}</certPath>&ndash;&gt;
                     <images>
                         <image>
-                            <!-- 镜像名称 -->
-                            <name>springboot/${project.groupId}-${project.artifactId}</name>
+                            &lt;!&ndash; 镜像名称 &ndash;&gt;
+                            <name>${project.artifactId}</name>
                             <build>
-                                <!-- 依赖的基础镜像 -->
+                                &lt;!&ndash; 依赖的基础镜像 &ndash;&gt;
                                 <from>localhost:5000/openjdk</from>
-                               <!-- <tags>
+                               &lt;!&ndash; <tags>
                                     <tag>latest</tag>
                                     <tag>${project.version}</tag>
-                                </tags>-->
-                                <!-- 暴露端口 -->
+                                </tags>&ndash;&gt;
+                                &lt;!&ndash; 暴露端口 &ndash;&gt;
                                 <ports>
                                     <port>8080</port>
                                 </ports>
-                           <!--     <assembly>
+                           &lt;!&ndash;     <assembly>
                                     &lt;!&ndash; 打包文件在镜像中位置 &ndash;&gt;
                                     <name>${docker.image.jarPath}</name>
                                     &lt;!&ndash; 指定打包进入镜像的文件为 jar 包 &ndash;&gt;
                                     <descriptorRef>artifact</descriptorRef>
-                                </assembly>-->
-                               <!-- <cmd>
+                                </assembly>&ndash;&gt;
+                               &lt;!&ndash; <cmd>
                                     &lt;!&ndash; 运行镜像执行的命令 &ndash;&gt;
                                     <shell>java -jar ${docker.image.jarPath}/${project.build.finalName}.jar</shell>
-                                </cmd>-->
+                                </cmd>&ndash;&gt;
                             </build>
                         </image>
                     </images>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
