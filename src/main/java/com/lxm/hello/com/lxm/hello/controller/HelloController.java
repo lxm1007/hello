@@ -19,6 +19,7 @@ public class HelloController {
 
     @RequestMapping("/time")
     public String toHello(){
+
         return "现在的时间是 "+this.helloService.foormatDate(new Date());
     }
 
