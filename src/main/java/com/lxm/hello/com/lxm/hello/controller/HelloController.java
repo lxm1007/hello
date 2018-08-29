@@ -17,9 +17,9 @@ public class HelloController {
     return "现在的时间是："+this.helloService.foormatDate(new Date());
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/time")
     public String toHello(){
-        return "rediret:hello";
+        return "现在的时间是："+this.helloService.foormatDate(new Date());
     }
 
 }
