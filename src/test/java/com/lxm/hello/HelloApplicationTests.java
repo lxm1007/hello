@@ -10,6 +10,5 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class HelloApplicationTests {
     @Test
     public void contextLoads() {
-        
     }
 }
