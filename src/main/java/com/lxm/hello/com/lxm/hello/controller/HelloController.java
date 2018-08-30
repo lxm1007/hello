@@ -14,7 +14,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public  String hello(){
-    return "现在的时间是："+this.helloService.foormatDate(new Date());
+    return "Hello World!");
     }
 
     @RequestMapping("/time")
