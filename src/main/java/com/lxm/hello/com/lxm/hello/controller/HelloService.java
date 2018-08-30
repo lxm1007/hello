@@ -12,6 +12,7 @@ public class HelloService {
     public String foormatDate(Date date){
         
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        
         return format.format(date);
     }
 }
