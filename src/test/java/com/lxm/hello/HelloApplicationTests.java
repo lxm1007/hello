@@ -11,5 +11,4 @@ public class HelloApplicationTests {
     @Test
     public void contextLoads() {
     }
-
 }
