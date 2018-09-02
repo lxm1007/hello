@@ -53,11 +53,7 @@
                         <image>openjdk:alpine</image>
                     </from>
                     <to>
-                        <image>localhost:8085/lxm/springboot-hello</image>
-                          <auth>
-                                 <username>admin</username>
-                                 <password>harbor123456</password>
-                          </auth>
+                        <image>localhost:5000/lxm/springboot-hello</image>
                     </to>
                 </configuration>
             </plugin>
