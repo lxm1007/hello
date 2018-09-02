@@ -54,6 +54,10 @@
                     </from>
                     <to>
                         <image>localhost:8085/lxm/springboot-hello</image>
+                          <auth>
+                                 <username>admin</username>
+                                 <password>harbor123456</password>
+                          </auth>
                     </to>
                 </configuration>
             </plugin>
